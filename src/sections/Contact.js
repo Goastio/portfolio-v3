@@ -2,9 +2,9 @@ const Contact = () => {
   return (
     <section id="contact" className="bg-white py-20">
       <div className="flex sm:flex-row flex-col max-w-screen-lg mx-auto px-5 sm:px-0 w-full gap-20">
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col sm:items-start items-center">
           <h3 className="text-6xl font-medium tracking-tight mb-5">Contact</h3>
-          <h2 className="text-xl">Get in touch.</h2>
+          <h2 className="text-xl flex">Get in touch.</h2>
         </div>
         <form className="w-full bg-gray-200 rounded-md p-10">
           <div className="flex gap-5 mb-5">
