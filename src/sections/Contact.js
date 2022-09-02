@@ -4,7 +4,7 @@ const Contact = () => {
       <div className="flex max-w-screen-lg mx-auto w-full gap-20 items-center">
         <div>
           <h3 className="text-6xl font-medium tracking-tight mb-5">Contact</h3>
-          <p>Give me a ring.</p>
+          <p>Get in touch.</p>
         </div>
         <form className="w-full bg-gray-200 rounded-md p-10">
           <div className="flex gap-5 mb-5">
@@ -26,7 +26,7 @@ const Contact = () => {
           />
           <button
             type="onSubmit"
-            className="mt-5 py-2.5 px-5 border-2 text-blue-500 border-blue-500 text-sm transition hover:bg-blue-500 hover:text-white"
+            className="bg-white mt-5 py-2.5 px-5 border-2 text-blue-500 border-blue-500 text-sm transition hover:bg-blue-500 hover:text-white"
           >
             Submit
           </button>
