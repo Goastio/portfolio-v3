@@ -6,9 +6,7 @@ const Projects = () => {
   return (
     <SectionWrapper
       title="Projects"
-      description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
-    vel non. Facilis deserunt necessitatibus magnam debitis ipsam iste
-    dolor cum placeat."
+      description="Listed below are the projects I am currently working on that are functional, or have been completed."
       gray="true"
     >
       <div className="flex flex-col lg:flex-row mt-10 gap-5">
@@ -17,20 +15,32 @@ const Projects = () => {
             <img src={redditapp} alt="" className="flex rounded-full" />
           </div>
           <div>
-            <h4 className="text-xl font-medium">Project name</h4>
+            <h4 className="text-xl font-medium">Browser for Reddit</h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
-              vel non. Facilis deserunt necessitatibus magnam debitis ipsam iste
-              dolor cum placeat.
+              An app I created that uses Reddit's API to display current
+              information on any subreddit.
             </p>
-            <button
-              onClick={() => {
-                window.open("brandonmaczynski.com/reddit-app", "_blank");
-              }}
-              className="mt-5 py-2.5 px-5 border-2 text-indigo-500 rounded-md border-indigo-500 text-sm transition hover:bg-indigo-500 hover:text-white"
-            >
-              View project
-            </button>
+            <div className="flex gap-2.5">
+              <button
+                onClick={() => {
+                  window.open("brandonmaczynski.com/reddit-app", "_blank");
+                }}
+                className="mt-5 py-2.5 px-5 border-2 text-indigo-500 rounded-md border-indigo-500 text-sm transition hover:bg-indigo-500 hover:text-white"
+              >
+                View project
+              </button>
+              <button
+                onClick={() => {
+                  window.open(
+                    "https://github.com/Goastio/reddit-browser",
+                    "_blank"
+                  );
+                }}
+                className="mt-5 py-2.5 px-5 border-2 text-indigo-500 rounded-md border-indigo-500 text-sm transition hover:bg-indigo-500 hover:text-white"
+              >
+                Source
+              </button>
+            </div>
           </div>
         </div>
 
@@ -39,20 +49,32 @@ const Projects = () => {
             <img src={blackjack} alt="" className="flex rounded-full" />
           </div>
           <div>
-            <h4 className="text-xl font-medium">Project name</h4>
+            <h4 className="text-xl font-medium">Blackjack</h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
-              vel non. Facilis deserunt necessitatibus magnam debitis ipsam iste
-              dolor cum placeat.
+              Programmed from the ground up without the use of APIs. One of my
+              first projects.
             </p>
-            <button
-              onClick={() => {
-                window.open("brandonmaczynski.com/blackjack", "_blank");
-              }}
-              className="mt-5 py-2.5 px-5 border-2 text-indigo-500 rounded-md border-indigo-500 text-sm transition hover:bg-indigo-500 hover:text-white"
-            >
-              View project
-            </button>
+            <div className="flex gap-2.5">
+              <button
+                onClick={() => {
+                  window.open("brandonmaczynski.com/blackjack", "_blank");
+                }}
+                className="mt-5 py-2.5 px-5 border-2 text-indigo-500 rounded-md border-indigo-500 text-sm transition hover:bg-indigo-500 hover:text-white"
+              >
+                View project
+              </button>
+              <button
+                onClick={() => {
+                  window.open(
+                    "https://github.com/Goastio/blackjack-react",
+                    "_blank"
+                  );
+                }}
+                className="mt-5 py-2.5 px-5 border-2 text-indigo-500 rounded-md border-indigo-500 text-sm transition hover:bg-indigo-500 hover:text-white"
+              >
+                Source
+              </button>
+            </div>
           </div>
         </div>
       </div>
