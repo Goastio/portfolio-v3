@@ -11,7 +11,7 @@ const Hero = () => {
           React applications, and styling them with Tailwind CSS.
         </p>
 
-        <button className="mt-5 py-2.5 px-5 border-2 text-blue-500 border-blue-500 text-sm transition hover:bg-blue-500 hover:text-white">
+        <button className="mt-5 py-2.5 px-5 border-2 text-indigo-500 rounded-md border-indigo-500 text-sm transition hover:bg-indigo-500 hover:text-white">
           Contact me
         </button>
       </div>
