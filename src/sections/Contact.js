@@ -4,7 +4,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="bg-white py-20">
-      <div className="flex sm:flex-row flex-col max-w-screen-lg mx-auto w-full gap-20 items-center">
+      <div className="flex sm:flex-row flex-col max-w-screen-lg mx-auto w-full gap-20">
         <div>
           <h3 className="text-6xl font-medium tracking-tight mb-5">Contact</h3>
           <h2 className="text-xl">Get in touch.</h2>
@@ -13,18 +13,18 @@ const Contact = () => {
           <div className="flex gap-5 mb-5">
             <input
               type="text"
-              className="w-full border px-5 py-2 text-lg rounded-md hover:cursor-pointer focus:cursor-text"
+              className="w-full focus:outline outline-2 outline-indigo-500 transition-all px-5 py-2 text-lg rounded-md hover:cursor-pointer focus:cursor-text"
               placeholder="Name"
             />
             <input
               type="text"
-              className="w-full border px-5 py-2 text-lg rounded-md hover:cursor-pointer focus:cursor-text"
+              className="w-full focus:outline outline-2 outline-indigo-500 transition-all px-5 py-2 text-lg rounded-md hover:cursor-pointer focus:cursor-text"
               placeholder="Email"
             />
           </div>
           <textarea
             type="text"
-            className="w-full border px-5 py-2 text-lg rounded-md resize-none hover:cursor-pointer focus:cursor-text"
+            className="w-full focus:outline outline-2 outline-indigo-500 transition-all px-5 py-2 text-lg rounded-md resize-none hover:cursor-pointer focus:cursor-text"
             placeholder="Message"
           />
           <button

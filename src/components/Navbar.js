@@ -4,9 +4,9 @@ const Navbar = () => {
   return (
     <section className="p-5 w-full bg-white">
       <div className="max-w-screen-lg mx-auto flex w-full justify-between items-center">
-        <div className="flex text-2xl items-center">
+        <div className="flex text-lg items-center">
           <FaCloudsmith className="text-indigo-500" />
-          <div className="font-bold tracking-tight flex">Brandon</div>
+          <div className="font-bold tracking-tight">Brandon Maczynski</div>
         </div>
         <div className="flex gap-2.5">
           <a
