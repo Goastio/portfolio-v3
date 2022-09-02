@@ -5,6 +5,7 @@ import blackjack from "../images/blackjack.png";
 const Projects = () => {
   return (
     <SectionWrapper
+      id="projects"
       title="Projects"
       description="Listed below are the projects I am currently working on that are functional, or have been completed."
       gray="true"

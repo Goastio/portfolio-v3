@@ -13,7 +13,7 @@ import {
 
 const Skills = () => {
   return (
-    <SectionWrapper title="Skills">
+    <SectionWrapper id="skills" title="Skills">
       <div className="grid grid-cols-3 sm:flex sm:flex-row w-full text-3xl justify-between gap-5 py-20">
         <div className="flex text-lg font-light gap-0.5 tracking-tight items-center text-black text-opacity-50">
           <SiHtml5 className=" hover:text-[#E54C27] transition duration-100" />

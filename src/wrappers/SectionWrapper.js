@@ -1,6 +1,7 @@
 const SectionWrapper = (props) => {
   return (
     <section
+      id={props.id}
       className={props.gray ? "bg-gray-100 py-20 px-5" : "bg-white py-20 px-5"}
     >
       <div className="max-w-screen-lg mx-auto">

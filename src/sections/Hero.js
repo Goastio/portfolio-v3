@@ -1,13 +1,5 @@
-const Hero = () => {
-  const scrollTo = () => {
-    const contact = document.getElementById("contact");
+const Hero = ({scrollTo}) => {
 
-    contact.scrollIntoView({
-      behavior: "smooth",
-      block: "end",
-      inline: "nearest",
-    });
-  };
 
   return (
     <section className="bg-gray-100 py-40 px-5">

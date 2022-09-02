@@ -1,6 +1,21 @@
 import { FaCloudsmith } from "react-icons/fa";
 
-const Navbar = () => {
+const Navbar = ({ scrollTo }) => {
+  const navLinks = [
+    {
+      name: "Skills",
+      link: "/skills",
+    },
+    {
+      name: "Projects",
+      link: "/projects",
+    },
+    {
+      name: "Contact",
+      link: "/contact",
+    },
+  ];
+
   return (
     <section className="p-5 w-full bg-white">
       <div className="max-w-screen-lg mx-auto flex w-full justify-between items-center">
@@ -9,24 +24,26 @@ const Navbar = () => {
           <div className="font-bold tracking-tight">Brandon Maczynski</div>
         </div>
         <div className="flex gap-2.5">
-          <a
-            className="link link-underline link-underline-black text-black"
-            href="/"
-          >
-            Skills
-          </a>
-          <a
-            className="link link-underline link-underline-black text-black"
-            href="/"
-          >
-            Projects
-          </a>
-          <a
-            className="link link-underline link-underline-black text-black"
-            href="/"
-          >
-            Contact
-          </a>
+          {navLinks.map((link) => {
+            return (
+              <button
+                onClick={() => {
+                  const element = document.getElementById(
+                    link.name.toLowerCase()
+                  );
+
+                  element.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                    inline: "nearest",
+                  });
+                }}
+                className="flex"
+              >
+                {link.name}
+              </button>
+            );
+          })}
         </div>
       </div>
     </section>
