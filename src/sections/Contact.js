@@ -29,7 +29,7 @@ const Contact = () => {
           />
           <button
             type="onSubmit"
-            className="bg-white mt-5 py-2.5 px-5 border-2 text-indigo-500 border-indigo-500 text-sm transition rounded-md hover:bg-indigo-500 hover:text-white"
+            className="bg-gray-200 mt-5 py-2.5 px-5 border-2 text-indigo-500 border-indigo-500 text-sm transition rounded-md hover:bg-indigo-500 hover:text-white"
           >
             Submit
           </button>
