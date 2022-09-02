@@ -1,4 +1,6 @@
 import { FaCloudsmith } from "react-icons/fa";
+import { HiOutlinePaperAirplane } from "react-icons/hi";
+import { AiOutlineTrophy } from "react-icons/ai";
 import BackToTop from "../components/BackToTop";
 
 const Footer = () => {
@@ -81,12 +83,12 @@ const Footer = () => {
               <div className="text-sm">
                 <a
                   href="mailto:bmaczynski11@yahoo.com"
-                  className="flex text-black text-opacity-80 hover:text-opacity-100"
+                  className="flex text-black text-opacity-80 hover:text-opacity-100 gap-1 items-center"
                 >
-                  bmaczynski11@yahoo.com
+                  <HiOutlinePaperAirplane /> bmaczynski11@yahoo.com
                 </a>
-                <div className="flex text-black text-opacity-80 hover:text-opacity-100">
-                  Resume
+                <div className="flex text-black text-opacity-80 hover:text-opacity-100 gap-1 items-center">
+                  <AiOutlineTrophy /> Resume
                 </div>
               </div>
             </div>
