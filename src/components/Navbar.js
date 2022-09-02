@@ -13,12 +13,6 @@ const Navbar = () => {
             className="link link-underline link-underline-black text-black"
             href="/"
           >
-            Home
-          </a>
-          <a
-            className="link link-underline link-underline-black text-black"
-            href="/"
-          >
             Skills
           </a>
           <a
