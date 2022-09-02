@@ -1,7 +1,10 @@
 const Contact = () => {
+
+  
+
   return (
-    <section className="bg-white py-20">
-      <div className="flex max-w-screen-lg mx-auto w-full gap-20 items-center">
+    <section id="contact" className="bg-white py-20">
+      <div className="flex sm:flex-row flex-col max-w-screen-lg mx-auto w-full gap-20 items-center">
         <div>
           <h3 className="text-6xl font-medium tracking-tight mb-5">Contact</h3>
           <h2 className="text-xl">Get in touch.</h2>

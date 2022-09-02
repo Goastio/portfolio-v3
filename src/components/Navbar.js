@@ -1,8 +1,13 @@
+import { FaCloudsmith } from "react-icons/fa";
+
 const Navbar = () => {
   return (
     <section className="p-5 w-full bg-white">
       <div className="max-w-screen-lg mx-auto flex w-full justify-between items-center">
-        <h2 className="text-2xl font-bold tracking-tight">Brandon</h2>
+        <div className="flex text-2xl items-center">
+          <FaCloudsmith className="text-indigo-500" />
+          <div className="font-bold tracking-tight flex">Brandon</div>
+        </div>
         <div className="flex gap-2.5">
           <a
             className="link link-underline link-underline-black text-black"
