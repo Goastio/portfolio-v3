@@ -24,7 +24,7 @@ const Projects = () => {
             <div className="flex gap-2.5">
               <button
                 onClick={() => {
-                  window.open("brandonmaczynski.com/reddit-app", "_blank");
+                  window.open("/reddit-app", "_blank");
                 }}
                 className="mt-5 py-2.5 px-5 border-2 text-indigo-500 rounded-md border-indigo-500 text-sm transition hover:bg-indigo-500 hover:text-white"
               >
@@ -58,7 +58,7 @@ const Projects = () => {
             <div className="flex gap-2.5">
               <button
                 onClick={() => {
-                  window.open("brandonmaczynski.com/blackjack", "_blank");
+                  window.open("/blackjack", "_blank");
                 }}
                 className="mt-5 py-2.5 px-5 border-2 text-indigo-500 rounded-md border-indigo-500 text-sm transition hover:bg-indigo-500 hover:text-white"
               >
