@@ -13,7 +13,7 @@ const Projects = () => {
     >
       <div className="flex flex-col lg:flex-row mt-10 gap-5">
         <div className="shadow-lg bg-white rounded-md p-5 flex flex-col lg:flex-row w-full gap-5 items-center">
-          <div className="w-28 h-28 bg-gray-200 border border-gray-300 rounded-full flex shrink-0">
+          <div className="w-32 h-32 bg-gray-200 border border-gray-300 rounded-full flex shrink-0">
             <img src={redditapp} alt="" className="flex rounded-full" />
           </div>
           <div>
@@ -35,7 +35,7 @@ const Projects = () => {
         </div>
 
         <div className="shadow-lg bg-white rounded-md p-5 flex flex-col lg:flex-row w-full gap-5 items-center">
-          <div className="w-28 h-28 bg-gray-200 border border-gray-300 rounded-full flex shrink-0">
+          <div className="w-32 h-32 bg-gray-200 border border-gray-300 rounded-full flex shrink-0">
             <img src={blackjack} alt="" className="flex rounded-full" />
           </div>
           <div>
