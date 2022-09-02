@@ -10,18 +10,18 @@ const Contact = () => {
           <div className="flex gap-5 mb-5">
             <input
               type="text"
-              className="w-full focus:outline outline-2 outline-indigo-500 transition-all px-5 py-2 text-lg rounded-md hover:cursor-pointer focus:cursor-text"
+              className="w-full focus:outline outline-2 outline-indigo-500 px-5 py-2 text-lg rounded-md hover:cursor-pointer focus:cursor-text"
               placeholder="Name"
             />
             <input
               type="text"
-              className="w-full focus:outline outline-2 outline-indigo-500 transition-all px-5 py-2 text-lg rounded-md hover:cursor-pointer focus:cursor-text"
+              className="w-full focus:outline outline-2 outline-indigo-500 px-5 py-2 text-lg rounded-md hover:cursor-pointer focus:cursor-text"
               placeholder="Email"
             />
           </div>
           <textarea
             type="text"
-            className="w-full focus:outline outline-2 outline-indigo-500 transition-all px-5 py-2 text-lg rounded-md resize-none hover:cursor-pointer focus:cursor-text"
+            className="w-full focus:outline outline-2 outline-indigo-500 px-5 py-2 text-lg rounded-md resize-none hover:cursor-pointer focus:cursor-text"
             placeholder="Message"
           />
           <button

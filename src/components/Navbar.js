@@ -1,6 +1,6 @@
 import { FaCloudsmith } from "react-icons/fa";
 
-const Navbar = ({ scrollTo }) => {
+const Navbar = () => {
   const navLinks = [
     {
       name: "Skills",
@@ -24,17 +24,17 @@ const Navbar = ({ scrollTo }) => {
           <div className="font-bold tracking-tight">Brandon Maczynski</div>
         </div>
         <div className="flex gap-2.5">
-          {navLinks.map((link) => {
+          {navLinks.map((link, index) => {
             return (
               <button
+                key={index}
                 onClick={() => {
                   const element = document.getElementById(
                     link.name.toLowerCase()
                   );
-
                   element.scrollIntoView({
                     behavior: "smooth",
-                    block: "start",
+                    block: "center",
                     inline: "nearest",
                   });
                 }}
