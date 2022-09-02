@@ -4,7 +4,7 @@ const Contact = () => {
       <div className="flex max-w-screen-lg mx-auto w-full gap-20 items-center">
         <div>
           <h3 className="text-6xl font-medium tracking-tight mb-5">Contact</h3>
-          <p>Get in touch.</p>
+          <h2 className="text-xl">Get in touch.</h2>
         </div>
         <form className="w-full bg-gray-200 rounded-md p-10">
           <div className="flex gap-5 mb-5">
