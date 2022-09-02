@@ -4,9 +4,9 @@ const Hero = ({scrollTo}) => {
   return (
     <section className="bg-gray-100 py-40 px-5">
       <div className="max-w-screen-lg mx-auto">
-        <h2 className="text-7xl font-medium tracking-tight mb-5">
-          Professional Frontend
-          <span className="text-indigo-500">&nbsp;Developer</span>
+        <h2 className="flex flex-wrap text-6xl md:text-7xl font-medium tracking-tight mb-5">
+          Professional Frontend&nbsp;
+          <span className="text-indigo-500">Developer</span>
         </h2>
         <p>
           Welcome to my portfolio. I am a passionate frontend developer who

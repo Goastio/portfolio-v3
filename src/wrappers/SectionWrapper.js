@@ -5,7 +5,7 @@ const SectionWrapper = (props) => {
       className={props.gray ? "bg-gray-100 py-20 px-5" : "bg-white py-20 px-5"}
     >
       <div className="max-w-screen-lg mx-auto">
-        <h3 className="text-6xl font-medium tracking-tight mb-5">
+        <h3 className="md:text-6xl text-5xl font-medium tracking-tight mb-5">
           {props.title}
         </h3>
         <p>{props.description}</p>
