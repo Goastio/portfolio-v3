@@ -76,7 +76,7 @@ const Contact = () => {
       id="contact"
       className="bg-white py-20 transition-all dark:bg-darkest"
     >
-      <div className="mx-auto flex w-full max-w-screen-lg flex-col gap-10 px-5 sm:flex-row">
+      <div className="mx-auto flex w-full max-w-screen-lg flex-col gap-10 px-5 lg:flex-row">
         <div className="flex flex-col items-center sm:items-start">
           <h3 className="mb-5 text-6xl font-medium tracking-tight">Contact</h3>
           <h2 className="flex text-center sm:text-left">
@@ -87,7 +87,7 @@ const Contact = () => {
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="flex w-3/5 shrink-0 flex-col rounded-md border bg-gray-100 p-5 transition-all dark:border-0 dark:border-t-4 dark:border-t-indigo-400 dark:bg-darker sm:p-10"
+          className="flex lg:w-3/5 shrink-0 flex-col rounded-md border bg-gray-100 p-5 transition-all dark:border-0 dark:border-t-4 dark:border-t-indigo-400 dark:bg-darker sm:p-10"
         >
           <div className="mb-2.5 flex gap-2.5 sm:mb-5 sm:gap-5">
             <input
