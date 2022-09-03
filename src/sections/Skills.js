@@ -60,7 +60,7 @@ const Skills = () => {
           return (
             <div
               key={index}
-              className="flex select-none items-center gap-1.5 text-5xl font-bold tracking-tight text-white transition hover:text-opacity-100 lg:mx-auto lg:gap-2.5 lg:text-4xl lg:text-opacity-80"
+              className="flex select-none items-center gap-1.5 text-5xl font-bold tracking-tight text-white lg:mx-auto lg:gap-2.5 lg:text-4xl"
             >
               <div className="text-4xl lg:text-3xl">{skill.icon}</div>
               {skill.name}
