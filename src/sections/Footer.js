@@ -79,9 +79,13 @@ const Footer = () => {
                 >
                   <HiOutlinePaperAirplane /> bmaczynski11@yahoo.com
                 </a>
-                <div className="flex items-center gap-1 text-opacity-80 hover:text-opacity-100">
+                <a
+                  href="/static/media/resume.pdf"
+                  target="_blank"
+                  className="flex items-center gap-1 text-opacity-80 hover:text-opacity-100"
+                >
                   <AiOutlineTrophy /> Resume
-                </div>
+                </a>
               </div>
             </div>
           </div>

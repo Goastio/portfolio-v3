@@ -12,7 +12,7 @@ const Projects = () => {
     >
       <div className="mt-10 flex flex-col gap-5 lg:flex-row">
         <div className="flex w-full flex-col items-center gap-5 rounded-md bg-white p-5 shadow-lg dark:bg-dark dark:shadow-none lg:flex-row">
-          <div className="flex h-32 w-32 shrink-0 rounded-full border border-gray-300 bg-gray-200">
+          <div className="flex h-32 w-32 shrink-0 rounded-full bg-gray-200">
             <img src={redditapp} alt="" className="flex rounded-full" />
           </div>
           <div>
@@ -46,7 +46,7 @@ const Projects = () => {
         </div>
 
         <div className="flex w-full flex-col items-center gap-5 rounded-md bg-white p-5 shadow-lg dark:bg-dark dark:shadow-none lg:flex-row">
-          <div className="flex h-32 w-32 shrink-0 rounded-full border border-gray-300 bg-gray-200">
+          <div className="flex h-32 w-32 shrink-0 rounded-full bg-gray-200">
             <img
               src={blackjack}
               alt=""
