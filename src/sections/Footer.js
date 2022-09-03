@@ -6,55 +6,47 @@ import BackToTop from "../components/BackToTop";
 const Footer = () => {
   return (
     <>
-      <section className="bg-gray-100 py-20 px-5">
-        <div className="max-w-screen-lg mx-auto flex flex-row flex-wrap">
-          <button
-            onClick={() => {
-              window.scrollTo({ top: 0, behavior: "smooth" });
-            }}
-            className="flex w-full justify-end text-black text-opacity-80 hover:text-opacity-100 mb-5 text-sm"
-          >
-            <BackToTop />
-          </button>
-          <div className="flex flex-col">
-            <div className="flex font-semibold tracking-tight text-lg items-center">
-              <FaCloudsmith className="text-indigo-500" />
+      <section className="relative bg-gray-100 py-20 px-5 dark:bg-darker dark:!text-gray-100">
+        <BackToTop />
+        <div className="mx-auto flex max-w-screen-lg flex-row flex-wrap">
+          <div className="flex w-full flex-col">
+            <div className="relative right-[4px] flex w-full items-center text-2xl font-semibold tracking-tight">
+              <FaCloudsmith className="text-indigo-500 dark:text-indigo-400" />
               Brandon Maczynski
             </div>
-            <div className="flex text-sm">Frontend Developer</div>
           </div>
-          <div className="flex w-full justify-between mt-5">
+          <div className="mt-5 flex w-full flex-wrap gap-10 lg:flex-nowrap lg:justify-between">
             <div className="flex flex-col">
-              <div className="flex font-semibold tracking-tight text-lg">
+              <div className="mb-1.5 flex text-lg font-semibold tracking-tight">
                 Work
               </div>
-              <div className="text-sm flex flex-col">
+              <div className="flex flex-col space-y-1 text-sm">
                 <a
                   href="/reddit-browser"
                   target="_blank"
-                  className="text-black text-opacity-80 hover:text-opacity-100"
+                  className="text-opacity-80 hover:text-opacity-100"
                 >
                   Reddit Browser
                 </a>
                 <a
                   href="/blackjack"
                   target="_blank"
-                  className="text-black text-opacity-80 hover:text-opacity-100"
+                  className="text-opacity-80 hover:text-opacity-100"
                 >
                   Blackjack
                 </a>
               </div>
             </div>
             <div className="flex flex-col">
-              <div className="flex font-semibold tracking-tight text-lg">
+              <div className="mb-1.5 flex text-lg font-semibold tracking-tight">
                 Socials
               </div>
-              <div className="text-sm flex flex-col">
+              <div className="flex flex-col space-y-1 text-sm">
                 <a
                   href="https://github.com/Goastio"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-black text-opacity-80 hover:text-opacity-100"
+                  className="text-opacity-80 hover:text-opacity-100"
                 >
                   Github
                 </a>
@@ -62,7 +54,7 @@ const Footer = () => {
                   href="https://www.linkedin.com/in/brandon-maczynski-40428022a/"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-black text-opacity-80 hover:text-opacity-100"
+                  className="text-opacity-80 hover:text-opacity-100"
                 >
                   LinkedIn
                 </a>
@@ -70,24 +62,24 @@ const Footer = () => {
                   href="https://twitter.com/DevelopWebsites"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-black text-opacity-80 hover:text-opacity-100"
+                  className="text-opacity-80 hover:text-opacity-100"
                 >
                   Twitter
                 </a>
               </div>
             </div>
             <div className="flex flex-col">
-              <div className="flex font-semibold tracking-tight text-lg">
+              <div className="mb-1.5 flex text-lg font-semibold tracking-tight">
                 Information
               </div>
-              <div className="text-sm">
+              <div className="space-y-1 text-sm">
                 <a
                   href="mailto:bmaczynski11@yahoo.com"
-                  className="flex text-black text-opacity-80 hover:text-opacity-100 gap-1 items-center"
+                  className="flex items-center gap-1 text-opacity-80 hover:text-opacity-100"
                 >
                   <HiOutlinePaperAirplane /> bmaczynski11@yahoo.com
                 </a>
-                <div className="flex text-black text-opacity-80 hover:text-opacity-100 gap-1 items-center">
+                <div className="flex items-center gap-1 text-opacity-80 hover:text-opacity-100">
                   <AiOutlineTrophy /> Resume
                 </div>
               </div>

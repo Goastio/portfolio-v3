@@ -1,4 +1,3 @@
-import SectionWrapper from "../wrappers/SectionWrapper";
 import {
   SiHtml5,
   SiCss3,
@@ -11,49 +10,65 @@ import {
   SiGithub,
 } from "react-icons/si";
 
+const mySkills = [
+  {
+    name: "HTML5",
+    icon: <SiHtml5 />,
+  },
+  {
+    name: "CSS3",
+    icon: <SiCss3 />,
+  },
+  {
+    name: "JavaScript",
+    icon: <SiJavascript />,
+  },
+  {
+    name: "React",
+    icon: <SiReact />,
+  },
+  {
+    name: "TailwindCSS",
+    icon: <SiTailwindcss />,
+  },
+  {
+    name: "Node",
+    icon: <SiNodedotjs />,
+  },
+  {
+    name: "Express",
+    icon: <SiExpress />,
+  },
+  {
+    name: "MongoDB",
+    icon: <SiMongodb />,
+  },
+  {
+    name: "GitHub",
+    icon: <SiGithub />,
+  },
+];
+
 const Skills = () => {
   return (
-    <SectionWrapper id="skills" title="Skills">
-      <div className="grid grid-cols-3 sm:flex sm:flex-row w-full text-3xl justify-between gap-5 py-20">
-        <div className="flex text-lg font-light gap-0.5 tracking-tight items-center text-black text-opacity-50">
-          <SiHtml5 className=" hover:text-[#E54C27] transition duration-100" />
-          HTML5
-        </div>
-        <div className="flex text-lg font-light gap-0.5 tracking-tight items-center text-black text-opacity-50">
-          <SiCss3 className="text-black text-opacity-50 hover:text-[#3F8EC6] transition duration-100" />
-          CSS3
-        </div>
-        <div className="flex text-lg font-light gap-0.5 tracking-tight items-center text-black text-opacity-50">
-          <SiJavascript className="text-black text-opacity-50 hover:text-[#EFDB4E] transition duration-100" />
-          Javascript
-        </div>
-
-        <div className="flex text-lg font-light gap-0.5 tracking-tight items-center text-black text-opacity-50">
-          <SiReact className="text-black text-opacity-50 hover:text-[#61DAFB] transition duration-100" />
-          ReactJS
-        </div>
-        <div className="flex text-lg font-light gap-0.5 tracking-tight items-center text-black text-opacity-50">
-          <SiTailwindcss className="text-black text-opacity-50 hover:text-[#2198BD] transition duration-100" />
-          TailwindCSS
-        </div>
-        <div className="flex text-lg font-light gap-0.5 tracking-tight items-center text-black text-opacity-50">
-          <SiNodedotjs className="text-black text-opacity-50 hover:text-[#82CD29] transition duration-100" />
-          Node
-        </div>
-        <div className="flex text-lg font-light gap-0.5 tracking-tight items-center text-black text-opacity-50">
-          <SiExpress className="text-black text-opacity-50 hover:text-black transition duration-100" />
-          Express
-        </div>
-        <div className="flex text-lg font-light gap-0.5 tracking-tight items-center text-black text-opacity-50">
-          <SiMongodb className="text-black text-opacity-50 hover:text-[#50A942] transition duration-100" />
-          MongoDB
-        </div>
-        <div className="flex text-lg font-light gap-0.5 tracking-tight items-center text-black text-opacity-50">
-          <SiGithub className="text-black text-opacity-50 hover:text-black transition duration-100" />
-          Github
-        </div>
+    <section
+      id="skills"
+      className="bg-indigo-600 transition-all dark:bg-darkest"
+    >
+      <div className="mx-auto grid w-full max-w-screen-lg gap-10 py-20 px-5 text-center lg:flex lg:flex-wrap">
+        {mySkills.map((skill, index) => {
+          return (
+            <div
+              key={index}
+              className="flex select-none items-center gap-1.5 text-5xl font-bold tracking-tight text-white transition hover:text-opacity-100 lg:mx-auto lg:gap-2.5 lg:text-4xl lg:text-opacity-80"
+            >
+              <div className="text-4xl lg:text-3xl">{skill.icon}</div>
+              {skill.name}
+            </div>
+          );
+        })}
       </div>
-    </SectionWrapper>
+    </section>
   );
 };
 

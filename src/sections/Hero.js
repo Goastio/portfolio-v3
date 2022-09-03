@@ -10,11 +10,13 @@ const Hero = () => {
   };
 
   return (
-    <section className="bg-gray-100 py-40 px-5">
-      <div className="max-w-screen-lg mx-auto">
-        <h2 className="flex flex-wrap text-6xl md:text-7xl font-medium tracking-tight mb-5">
+    <section className="bg-gray-100 py-40 px-5 transition-all dark:bg-darker dark:text-gray-100">
+      <div className="mx-auto max-w-screen-lg">
+        <h2 className="mb-5 flex flex-wrap text-6xl font-medium tracking-tight md:text-7xl">
           Professional Frontend&nbsp;
-          <span className="text-indigo-500">Developer</span>
+          <span className="text-indigo-500 dark:text-indigo-400">
+            Developer
+          </span>
         </h2>
         <p>
           Welcome to my portfolio. I am a passionate frontend developer who
@@ -24,7 +26,7 @@ const Hero = () => {
 
         <button
           onClick={scrollTo}
-          className="mt-5 py-2.5 px-5 border-2 text-indigo-500 rounded-md border-indigo-500 text-sm transition hover:bg-indigo-500 hover:text-white"
+          className="mt-5 rounded-md border-2 border-indigo-500 py-2.5 px-5 text-sm text-indigo-500 transition hover:bg-indigo-500 hover:text-white dark:border-indigo-400 dark:text-indigo-400 dark:hover:bg-indigo-400 dark:hover:text-darkest"
         >
           Contact me
         </button>

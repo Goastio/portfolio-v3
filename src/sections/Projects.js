@@ -10,9 +10,9 @@ const Projects = () => {
       description="Listed below are the projects I am currently working on that are functional, or have been completed."
       gray="true"
     >
-      <div className="flex flex-col lg:flex-row mt-10 gap-5">
-        <div className="shadow-lg bg-white rounded-md p-5 flex flex-col lg:flex-row w-full gap-5 items-center">
-          <div className="w-32 h-32 bg-gray-200 border border-gray-300 rounded-full flex shrink-0">
+      <div className="mt-10 flex flex-col gap-5 lg:flex-row">
+        <div className="flex w-full flex-col items-center gap-5 rounded-md bg-white p-5 shadow-lg dark:bg-dark dark:shadow-none lg:flex-row">
+          <div className="flex h-32 w-32 shrink-0 rounded-full border border-gray-300 bg-gray-200">
             <img src={redditapp} alt="" className="flex rounded-full" />
           </div>
           <div>
@@ -26,7 +26,7 @@ const Projects = () => {
                 onClick={() => {
                   window.open("/reddit-browser", "_blank");
                 }}
-                className="mt-5 py-2.5 px-5 border-2 text-indigo-500 rounded-md border-indigo-500 text-sm transition hover:bg-indigo-500 hover:text-white"
+                className="mt-5 rounded-md border-2 border-indigo-500 py-2.5 px-5 text-sm text-indigo-500 transition hover:bg-indigo-500 hover:text-white dark:border-indigo-400 dark:text-indigo-400 dark:hover:bg-indigo-400 dark:hover:text-darkest"
               >
                 View project
               </button>
@@ -37,7 +37,7 @@ const Projects = () => {
                     "_blank"
                   );
                 }}
-                className="mt-5 py-2.5 px-5 border-2 text-indigo-500 rounded-md border-indigo-500 text-sm transition hover:bg-indigo-500 hover:text-white"
+                className="mt-5 rounded-md border-2 border-indigo-500 py-2.5 px-5 text-sm text-indigo-500 transition hover:bg-indigo-500 hover:text-white dark:border-indigo-400 dark:text-indigo-400 dark:hover:bg-indigo-400 dark:hover:text-darkest"
               >
                 Source
               </button>
@@ -45,9 +45,13 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="shadow-lg bg-white rounded-md p-5 flex flex-col lg:flex-row w-full gap-5 items-center">
-          <div className="w-32 h-32 bg-gray-200 border border-gray-300 rounded-full flex shrink-0">
-            <img src={blackjack} alt="" className="flex rounded-full" />
+        <div className="flex w-full flex-col items-center gap-5 rounded-md bg-white p-5 shadow-lg dark:bg-dark dark:shadow-none lg:flex-row">
+          <div className="flex h-32 w-32 shrink-0 rounded-full border border-gray-300 bg-gray-200">
+            <img
+              src={blackjack}
+              alt=""
+              className="flex rounded-full object-cover"
+            />
           </div>
           <div>
             <h4 className="text-xl font-medium">Blackjack</h4>
@@ -60,7 +64,7 @@ const Projects = () => {
                 onClick={() => {
                   window.open("/blackjack", "_blank");
                 }}
-                className="mt-5 py-2.5 px-5 border-2 text-indigo-500 rounded-md border-indigo-500 text-sm transition hover:bg-indigo-500 hover:text-white"
+                className="mt-5 rounded-md border-2 border-indigo-500 py-2.5 px-5 text-sm text-indigo-500 transition hover:bg-indigo-500 hover:text-white dark:border-indigo-400 dark:text-indigo-400 dark:hover:bg-indigo-400 dark:hover:text-darkest"
               >
                 View project
               </button>
@@ -71,7 +75,7 @@ const Projects = () => {
                     "_blank"
                   );
                 }}
-                className="mt-5 py-2.5 px-5 border-2 text-indigo-500 rounded-md border-indigo-500 text-sm transition hover:bg-indigo-500 hover:text-white"
+                className="mt-5 rounded-md border-2 border-indigo-500 py-2.5 px-5 text-sm text-indigo-500 transition hover:bg-indigo-500 hover:text-white dark:border-indigo-400 dark:text-indigo-400 dark:hover:bg-indigo-400 dark:hover:text-darkest"
               >
                 Source
               </button>
