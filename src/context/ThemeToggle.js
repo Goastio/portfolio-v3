@@ -13,7 +13,7 @@ const Toggle = () => {
         </button>
       ) : (
         <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
-          <FaMoon className=" transition-all hover:text-indigo-500 dark:hover:text-indigo-400" />
+          <FaMoon className="transition-all hover:text-indigo-500 dark:hover:text-indigo-400" />
         </button>
       )}
     </div>

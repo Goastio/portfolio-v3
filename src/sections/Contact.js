@@ -87,7 +87,7 @@ const Contact = () => {
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="flex lg:w-3/5 shrink-0 flex-col rounded-md border bg-gray-100 p-5 transition-all dark:border-0 dark:border-t-4 dark:border-t-indigo-400 dark:bg-darker sm:p-10"
+          className="flex shrink-0 flex-col rounded-md border bg-gray-100 p-5 transition-all dark:border-0 dark:border-t-4 dark:border-t-indigo-400 dark:bg-darker sm:p-10 lg:w-3/5"
         >
           <div className="mb-2.5 flex gap-2.5 sm:mb-5 sm:gap-5">
             <input

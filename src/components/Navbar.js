@@ -39,6 +39,7 @@ const Navbar = ({ mobileMenu, setMobileMenu }) => {
             >
               {!mobileMenu ? (
                 <button
+                  className="p-1"
                   onClick={() => {
                     setMobileMenu(!mobileMenu);
                   }}
@@ -47,6 +48,7 @@ const Navbar = ({ mobileMenu, setMobileMenu }) => {
                 </button>
               ) : (
                 <button
+                  className="p-1"
                   onClick={() => {
                     setMobileMenu(!mobileMenu);
                   }}
