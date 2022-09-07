@@ -8,12 +8,18 @@ const Toggle = () => {
   return (
     <div className="relative z-50 mr-5 flex self-center ease-in-out sm:transition-all">
       {theme === "dark" ? (
-        <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
-          <FaSun className="text-lg transition-all hover:text-indigo-500 dark:hover:text-indigo-400" />
+        <button
+          className="p-1 text-lg transition-all hover:text-indigo-500 dark:hover:text-indigo-400"
+          onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+        >
+          <FaSun />
         </button>
       ) : (
-        <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
-          <FaMoon className="transition-all hover:text-indigo-500 dark:hover:text-indigo-400" />
+        <button
+          className="p-1 transition-all hover:text-indigo-500 dark:hover:text-indigo-400"
+          onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+        >
+          <FaMoon />
         </button>
       )}
     </div>
